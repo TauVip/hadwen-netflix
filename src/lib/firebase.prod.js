@@ -1,7 +1,6 @@
 import Firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
-import { seedDatabase } from '../seed'
 
 const config = {
   apiKey: 'AIzaSyCs6sl2__dyTzq1tsynv0aBhLZUQuEvWFI',
@@ -13,7 +12,5 @@ const config = {
 }
 
 const firebase = Firebase.initializeApp(config)
-
-seedDatabase(firebase)
 
 export { firebase }
